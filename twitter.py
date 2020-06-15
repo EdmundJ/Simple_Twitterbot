@@ -2,8 +2,8 @@ import tweepy
 import time
 
 
-authentication = tweepy.OAuthHandler("API key","API secret key") #change the API and API Secret key with you own value
-authentication.set_access_token("Access token", "Access token secret") #change the token and token secret key with you own value
+authentication = tweepy.OAuthHandler("API key","API secret key") #change the API and API Secret key with you'r own value
+authentication.set_access_token("Access token", "Access token secret") #change the token and token secret key with you'r own value
 api = tweepy.API(authentication, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
 User = api.me()
 
